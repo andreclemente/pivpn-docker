@@ -5,7 +5,8 @@ MAINTAINER Jianshen Liu <jliu120@ucsc.edu>
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         git \
-        dhcpcd5
+        dhcpcd5 \
+        ca-certificates
 
 ARG pivpnFilesDir=/etc/.pivpn
 # Should check all the logics before upgrading the version
